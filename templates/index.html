@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Prediction Form</title>
+    <!-- Add any CSS or styling here -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Cost Prediction Form</h1>
+    <form action="/predict" method="post">
+        <label for="commodity">Commodity:</label>
+        <input type="text" name="commodity" required><br><br>
+
+        <label for="year">Year:</label>
+        <input type="number" name="year" required><br><br>
+
+        <label for="average">Average:</label>
+        <input type="number" name="average" required><br><br>
+
+        <label for="unit">Unit:</label>
+        <input type="text" name="unit" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
