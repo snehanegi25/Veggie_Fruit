@@ -36,7 +36,7 @@ def predict():
         # Make a prediction using the model
         prediction = model.predict(prediction_data)
 
-        return render_template('result.html', prediction=prediction[0])
+        return render_template('index.html', prediction=prediction[0])
 
 # ... (the rest of your code) ...
 
